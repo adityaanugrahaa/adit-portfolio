@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './main.css'
 import HeroImage from './assets/images/hero-image.png'
 import ExperienceCard from './Components/ExperienceCard/ExperienceCard';
-import PortoImage from './assets/images/work-1.png'
 import AboutImage from './assets/images/ABOUT.png'
 import ExperienceImage from './assets/images/EXPERIENCE.png'
 import WorkImage from './assets/images/WORKS.png'
@@ -13,16 +12,12 @@ import DesignSystemImage from './assets/images/design-system.svg'
 import WeatherAppImage from './assets/images/weather.svg'
 
 function App() {
-	const [isMouseEnter, setIsMouseEnter] = useState<boolean>(false)
-	const [mouseCoordinate, setMouseCoordinate] = useState<{ x: number, y: number }>({ x: 0, y: 0 })
-	const [workList, setWorkList] = useState<Array<Array<string>>>([
+	const [workList] = useState<Array<Array<string>>>([
 		[AndalinGoImage, 'https://play.google.com/store/apps/details?id=com.andalinlite&hl=id&gl=US&pli=1', 'AndalinGo'],
 		[AndalinDashboardImage, 'https://drive.google.com/file/d/1rSNQVOK0bcBh_BIKdanedg4nNPNM0hq4/view', 'Dashboard Andalin'],
 		[DesignSystemImage, 'https://drive.google.com/file/d/1rSNQVOK0bcBh_BIKdanedg4nNPNM0hq4/view', 'Design System'],
 		[WeatherAppImage, 'https://drive.google.com/file/d/1rSNQVOK0bcBh_BIKdanedg4nNPNM0hq4/view', 'Weather Apps'],
 	])
-
-	const backgroundRef = useRef<HTMLDivElement>(null)
 
 	useEffect(() => {
 		const bodyClassList = ["bg-theme-1100", "leading-relaxed", "text-gray-200", "antialiased", "selection:bg-teal-300", "selection:text-teal-900", "overflow-x-hidden"];
@@ -33,7 +28,6 @@ function App() {
 		}
 		root.classList.add('scroll-smooth')
 	}, []);
-	console.log(mouseCoordinate)
 	return (
 		<div
 			// onMouseEnter={() => setIsMouseEnter(true)}
