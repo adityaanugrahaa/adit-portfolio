@@ -2,10 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import './main.css'
 import HeroImage from './assets/images/hero-image.png'
 import ExperienceCard from './Components/ExperienceCard/ExperienceCard';
-import PortoImage from './assets/images/work-1.png'
-import AboutImage from './assets/images/ABOUT.png'
-import ExperienceImage from './assets/images/EXPERIENCE.png'
-import WorkImage from './assets/images/WORKS.png'
 
 import AndalinGoImage from './assets/images/andalin-go.svg'
 import AndalinDashboardImage from './assets/images/andalin-dashboard.svg'
