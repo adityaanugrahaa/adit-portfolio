@@ -30,10 +30,6 @@ function App() {
 	}, []);
 	return (
 		<div
-			// onMouseEnter={() => setIsMouseEnter(true)}
-			// onMouseLeave={() => setIsMouseEnter(false)}
-			// onMouseMove={(e) => setMouseCoordinate({ x: e.pageX, y: e.pageY })}
-			// onMouseOver={(e) => setMouseCoordinate({ x: e.pageX, y: e.pageY })}
 			id="app"
 			className="relative">
 			<div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-20 lg:px-24 lg:py-0">
